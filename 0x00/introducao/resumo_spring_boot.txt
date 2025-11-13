@@ -1,0 +1,48 @@
+O que é Spring Boot Framework?
+
+O Spring Boot Framework veio para se tornar uma porta de entrada e início mais conveniente de 
+configuração e montagem da aplicação do que o Spring Framework. O Spring Framework veio para
+dar uma nova "primavera" ao "inverno" que o Java estava passando com o seu framework JEE
+(Java Enterprise Edition) no mercado, com o objetivo de simplificar o desenvolvimento e a 
+configuração da aplicação, subdividindo as suas funções em diversos módulos, um para cada
+caso de uso, e com o tempo, mais e mais módulos foram incluídos no Spring Framework. 
+Tanto o Spring Boot quanto o Spring Framework são mantidos e desenvolvidos pela comunidade,
+e possui uma licença gratuita da Apache Licence, e tem uma forte comunidade, foruns de discussão
+e consequentemente, é muito adotado pelo mercado, principalmente dos mercados financeiros.
+
+O Spring Boot reduziu ainda mais a necessidade de configuração que o Spring Framework proporcionou,
+usando uma abordagem de convenção sobre a configuração, onde ele tem a sua própria "opinião" sobre 
+o conjunto de bibliotecas dependentes que formam os pacotes de configuração chamados Starters.
+Os Starters permitem uma configuração ainda mais enxuda no pom.xml do Maven, onde cada Starter tem
+em sua versão, uma lista de todas as bibliotecas necessárias e suas respectivas versões, automatizando
+a configuração inicial do projeto Java. Basta declarar o Starter no pom.xml com ou sem a versão especificada
+e com mais poucas configurações, no primeiro build, o Maven vai atrás de todas as dependências e consegue
+compilar o projeto com sucesso pela primeira vez. Isso elimina drasticamente o esforço inicial em 
+configurar a aplicação para começar a desenvolver, o que repersenta um ganho de produtividade imenso.
+Os desenvolvedores conseguem se concentrar mais nas regras de negócio, que é o que gera valor para os
+empresarios e donos de produto (PO's) e não precisam se preocupar com a infraestrutura da aplicação.
+
+Benefícios e recursos
+
+* O Spring Boot é muito leve, ficando em torno de 2 a 5 MB em sua configuração mais básica.
+* Atua com IoC (Inversão de Controle) por meio da Injeção de Dependência.
+* Oferece baixo acoplamento entre as dependências de objetos.
+* Oferece uma configuração inicial conveniente por meio dos Starters, juntamente com o Maven ou Gradle.
+* Com o Spring Initializr, oferece uma configuração inicial ainda mais conveniente, podendo gerar
+  de forma muito rápida, um projeto Java buildável e executável.
+* Oferece um servidor de aplicação embutido na aplicação.
+
+É possível adicionar novas dependências no projeto acresentando no pom.xml o Starter responsável pela 
+tecnologia que você quer adicionar. No caso do JPA, adicionar o respectivo starter-jpa. No caso do
+Hibernate, a mesma coisa.
+
+A melhor IDE para se trabalhar com o Spring Boot é aquela que o desenvolvedor está mais acostumado, conhecendo
+seus principais atalhos e funções de produtividade. Para quem está acostumado com o Eclipse, pode usar o 
+Spring Tools Suite, que é praticamente igual, mas tem uma interface que oferece facilidades para executar os 
+projetos Spring Boot. Quem é acostumado com o Eclipse, também pode usar o IntelliJ e configurá-lo com o KeyMap
+do Eclipse e assim, aproveitar todos os recursos que o Eclipse não tem e que facilitam e muito na produtividade
+do dia a dia do desenvolvedor.
+
+O Spring Initializr é um site que possui campos para preenchimento onde você pode definir o nome do projeto,
+adicionar os Starters desejados, escolher entre as linguagens Java, Kotlin e Groove, que rodam sobre a JVM, 
+escolher a versão da linguagem e gerar um jar, ou war para você importar em seu projeto.
