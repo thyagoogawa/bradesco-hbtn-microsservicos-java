@@ -79,5 +79,11 @@ public class Song {
 		Song other = (Song) obj;
 		return Objects.equals(id, other.id);
 	 }
+
+	 @Override
+	 public String toString() {
+		return "Song [id=" + id + ", nome=" + nome + ", artista=" + artista + ", album=" + album + ", anoLancamento="
+				+ anoLancamento + "]";
+	 }
 	 
 }
