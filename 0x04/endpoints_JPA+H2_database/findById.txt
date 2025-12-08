@@ -20,7 +20,7 @@
       "id": 2,
       "logradouro": "RUA",
       "endereco": "LÁ LONGE",
-      "numero": 487,
+      "numero": "487",
       "bairro": "JARDIM BONITO",
       "cidade": "CIDADE DO NORTE",
       "estado": "SP"
