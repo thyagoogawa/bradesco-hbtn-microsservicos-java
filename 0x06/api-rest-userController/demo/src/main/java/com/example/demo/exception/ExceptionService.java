@@ -11,7 +11,7 @@ public class ExceptionService {
 	ResponseEntity<UserErrorResponse> handleIdException(UserIdException ex){
 		UserErrorResponse uer = new UserErrorResponse();
 		uer.setStatus(HttpStatus.BAD_REQUEST.value()); 
-		uer.setMessage("You have entered id " + ex.getMessage() + " invalid.");
+		uer.setMessage("You have entered ID " + ex.getMessage() + " invalid.");
 		return new ResponseEntity<>(uer, HttpStatus.BAD_REQUEST); 
 	}
 	
